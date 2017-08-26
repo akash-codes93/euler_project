@@ -21,3 +21,9 @@ def natural_steps(start, end, steps):
     while i< end:
         yield i
         i = i+steps
+
+def natural_dec(start, end,steps):
+    i = start
+    while i> end:
+        yield i
+        i = i-steps
