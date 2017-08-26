@@ -14,3 +14,10 @@ def febonacci(a,b,limit):
         yield c
         a = b
         b = c
+
+
+def natural_steps(start, end, steps):
+    i = start
+    while i< end:
+        yield i
+        i = i+steps
