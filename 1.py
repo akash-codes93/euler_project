@@ -36,6 +36,19 @@ def euler_1_alt(n):
     return result
 
 
+# optimised approach
+
+def SumDivisbleBy(n, p):
+    t = int(p / n)
+    return (n * t * (t + 1)) >> 1
+
+
+def euler_1_opt(n):
+    n= n-1
+    result = SumDivisbleBy(3, n) + SumDivisbleBy(5, n) - SumDivisbleBy(15, n)
+    return result
+
+
 if __name__ == '__main__':
     #ans 233168
-    print(euler_1(1000))
+    print(euler_1_opt(10))
