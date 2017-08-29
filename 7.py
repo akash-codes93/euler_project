@@ -9,7 +9,7 @@ def is_prime(num):
     while i * i <= num:
         if num % i == 0 or num % (i + 2) == 0:
             return False
-    i += 6
+        i += 6
     return True
 
 def prime_at(nth):
