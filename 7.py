@@ -16,7 +16,7 @@ def prime_at(nth):
     n = 0
     prime_count = 0
     while prime_count < nth:
-        if check_prime(n):
+        if is_prime(n):
             prime_count += 1
         n += 1
     return n - 1
